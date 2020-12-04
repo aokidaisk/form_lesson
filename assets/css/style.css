@@ -1,12 +1,8 @@
 @charset "utf-8";
 
-body {
+.text_element {
 	color: #545658;
 	font-size: 12px;
-}
-
-input,select {
-	vertical-align: middle;
 }
 
 .halfwidth {
@@ -81,9 +77,18 @@ input,select {
 	color: #fff;
 }
 
+.button_facebook:hover {
+	background-color: #344e87;
+	border-color: transparent;
+}
+
 .button_google {
 	background-color: #fff;
 	color: #dd4b39;
+}
+
+.button_google:hover {
+	background-color: #f7f7f7;
 }
 
 .attentio_text {
@@ -147,7 +152,6 @@ input,select {
 }
 
 .input-box {
-	appearance: none;
 	background-color: #fbfbfb;
 	border: 1px solid #d9d9d9;
 	border-radius: 3px;
@@ -168,23 +172,24 @@ input,select {
 }
 
 .choice_text {
+	color: #545658;
 	font-size: 16px;
 }
 
-.gender_box {
-	display: inline-block;
+.gender_choice {
 	margin-left: 15px;
 }
 
-.gender_box:first-child {
+.gender_choice:first-child {
 	margin-left: 0;
 }
 
-.checke_box input {
+.gender_choice input {
 	display: none;
 }
 
 .gender_choice span {
+	display: inline-block;
 	padding: 3px 3px 3px 20px;
 	position: relative;
 }
@@ -202,7 +207,7 @@ input,select {
 	border-radius: 50%;
 }
 
-.radio_box:checked + span::after {
+.gender_choice input:checked + span::after {
 	content: '';
 	position: absolute;
 	left: 4px;
@@ -214,12 +219,11 @@ input,select {
 	background-color: #01bfbd;
 }
 
-.origin-box:focus {
-	border: 1px solid #d9d9d9;
-	outline: none;
+.origin-select {
+	position: relative;
 }
 
-.select_box::after {
+.origin-select::after {
 	content: '';
 	display: inline-block;
 	position: absolute;
@@ -232,6 +236,15 @@ input,select {
 	border-bottom: 2px solid #d9d9d9;
 }
 
+.origin-box {
+	appearance: none;
+}
+
+.origin-box:focus {
+	border: 1px solid #d9d9d9;
+	outline: none;
+}
+
 .course-select {
 	margin-top: 10px;
 }
@@ -240,6 +253,9 @@ input,select {
 	margin-top: 5px;
 }
 
+.course-select input {
+	display: none;
+}
 
 .course_box span{
 	padding-left: 25px;
@@ -257,7 +273,7 @@ input,select {
 	border: 1px solid #d9d9d9;
 }
 
-.check_box:checked + span::after {
+.course_box input:checked + span::after {
 	content: '';
 	position: absolute;
 	left: 6px;
