@@ -1,1 +1,306 @@
 @charset "utf-8";
+
+body {
+	color: #545658;
+	font-size: 12px;
+}
+
+input,select {
+	vertical-align: middle;
+}
+
+.halfwidth {
+	width: 50%;
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+
+/*    */
+
+.wrapper {
+	background-color: #f2f6f7;
+	padding: 32px 0;
+}
+
+.inner {
+	margin: 0 auto;
+	width: 640px;
+}
+
+.main-content {
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+	box-sizing: border-box;
+	padding: 48px 64px;
+}
+
+.main-title {
+	text-align: center;
+}
+
+.main-title_text {
+	font-size: 24px;
+}
+
+.sns-select {
+	display: flex;
+	margin-top: 24px;
+}
+
+.sns-button {
+	margin-left: 8px;
+}
+
+.sns-button:first-child {
+	margin-left: 0;
+}
+
+.button {
+	border: 1px solid #d9d9d9;
+	border-radius: 3px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 500;
+	transition: .3s all;
+	padding: 13px;
+}
+
+.button_facebook {
+	background-color: #3b5999;
+	border-color: #3b5999;
+	color: #fff;
+}
+
+.button_google {
+	background-color: #fff;
+	color: #dd4b39;
+}
+
+.attentio_text {
+	color: #949697;
+}
+
+.attentio-info {
+	margin-top: 8px;
+}
+
+.account-info {
+	margin: 20px 0;
+	position: relative;
+	text-align: center;
+}
+
+.account-info::before {
+	background-color: #ececec;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 1px;
+	width: 100%;
+}
+
+.account-info_text {
+	background-color: #fff;
+	display: inline-block;
+	padding: 0 10px;
+	position: relative;
+}
+
+.form-box {
+	margin-top: 20px;
+}
+
+.form-box:first-child {
+	margin-top: 0;
+}
+
+.warning {
+	color: #dd4b39;
+}
+
+.name-box {
+	display: flex;
+}
+
+.name-box_inner {
+	margin-left: 16px;
+}
+
+.name-box_inner:first-child {
+	margin-left: 0;
+}
+
+.box_text {
+	display: block;
+}
+
+.input-box {
+	appearance: none;
+	background-color: #fbfbfb;
+	border: 1px solid #d9d9d9;
+	border-radius: 3px;
+	box-sizing: border-box;
+	font-size: 13px;
+	line-height: 2;
+	height: 36px;
+	padding: 5px;
+}
+
+.input-box:focus {
+	border: 1px solid #01bfbd;
+	outline: none;  
+}
+
+.input-box_top {
+	margin-top: 5px;
+}
+
+.choice_text {
+	font-size: 16px;
+}
+
+.gender_box {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.gender_box:first-child {
+	margin-left: 0;
+}
+
+.checke_box input {
+	display: none;
+}
+
+.gender_choice span {
+	padding: 3px 3px 3px 20px;
+	position: relative;
+}
+
+.gender_choice span::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 14px;
+	width: 14px;
+	background-color: #fbfbfb;
+	border: 1px solid #d9d9d9;
+	border-radius: 50%;
+}
+
+.radio_box:checked + span::after {
+	content: '';
+	position: absolute;
+	left: 4px;
+	top: 50%;
+	height: 8px;
+	width: 8px;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	background-color: #01bfbd;
+}
+
+.origin-box:focus {
+	border: 1px solid #d9d9d9;
+	outline: none;
+}
+
+.select_box::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 45%;
+	transform: rotate(45deg);
+	height: 5px;
+	width: 5px;
+	border-right: 2px solid #d9d9d9;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+.course-select {
+	margin-top: 10px;
+}
+
+.course-select:first-child {
+	margin-top: 5px;
+}
+
+
+.course_box span{
+	padding-left: 25px;
+	position: relative;
+}
+
+.course_box span::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	height: 15px;
+	width: 15px;
+	margin-top: -8px;
+	border: 1px solid #d9d9d9;
+}
+
+.check_box:checked + span::after {
+	content: '';
+	position: absolute;
+	left: 6px;
+	top: 50%;
+	transform: rotate(45deg);
+	height: 16px;
+	width: 8px;
+	margin-top: -12px;
+	border-right: 3px solid #01bfbd;
+	border-bottom: 3px solid #01bfbd;
+}
+
+.remark_area {
+	resize: none;
+	height: 100px;
+}
+
+.send_button {	
+	padding: 13px;
+	background-color: #01bfbd;
+	color: #fff;
+}
+
+.like_color {
+	color: #01a6a4;
+}
+
+.footer {
+	margin-top: 32px;
+	text-align: center;
+}
+
+.footer_text {
+	line-height: 16px;
+	margin-top: 8px;
+}
+
+.footer_text:first-child{
+	margin-top: 0;
+}
+
+.under-score:hover {
+	box-sizing: border-box;
+	border-bottom: 1px solid #ececec;
+	border-bottom-color: #01a6a4;
+}
