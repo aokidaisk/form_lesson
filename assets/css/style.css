@@ -163,7 +163,9 @@
 }
 
 .input-box:focus {
-	border: 1px solid #01bfbd;
+	background-color: #fff;
+	border-color: rgba(59, 133, 133, .4);
+	box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
 	outline: none;  
 }
 
@@ -174,6 +176,10 @@
 .choice_text {
 	color: #545658;
 	font-size: 16px;
+}
+
+.gender_box {
+	display: flex;
 }
 
 .gender_choice {
@@ -249,7 +255,7 @@
 	margin-top: 10px;
 }
 
-.course-select:first-child {
+.course-select:first-of-type {
 	margin-top: 5px;
 }
 
@@ -297,22 +303,26 @@
 	color: #fff;
 }
 
-.like_color {
+.link_text {
+	line-height: 16px;
+}
+
+.link_color {
 	color: #01a6a4;
+}
+
+.link_color:hover {
+	color: #01bfbd;
 }
 
 .footer {
 	margin-top: 32px;
 	text-align: center;
+	padding-bottom: 8px;
 }
 
-.footer_text {
-	line-height: 16px;
+.authentication {
 	margin-top: 8px;
-}
-
-.footer_text:first-child{
-	margin-top: 0;
 }
 
 .under-score:hover {
