@@ -297,10 +297,15 @@
 	height: 100px;
 }
 
-.send_button {	
-	padding: 13px;
+.send_button {
+	border: 0;
 	background-color: #01bfbd;
 	color: #fff;
+	padding: 13px;
+}
+
+.send_button:hover {
+	background-color: #01a6a4;
 }
 
 .link_text {
